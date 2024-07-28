@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 
 import com.github.hugobor.gof_blabu.Person;
 import com.github.hugobor.gof_blabu.Stuff;
+import com.github.hugobor.gof_blabu.facade.Facade;
 import com.github.hugobor.gof_blabu.singleton.PersonSingleton;
 import com.github.hugobor.gof_blabu.strategy.BoringStrategy;
 import com.github.hugobor.gof_blabu.strategy.EmojiStrategy;
@@ -67,7 +68,8 @@ class BlabuTest {
 		hugoLove.setLoveStrategy(new NormalStrategy());
 		hugoLove.love(PersonSingleton.getUniqueInstance());
 		
-		
+		var evil = new Facade();
+		evil.doVeryComplexEvilThing("Hugo", "eu-gosto-de-mamar-na-teta-da-cabrita");
 	}
 	
 

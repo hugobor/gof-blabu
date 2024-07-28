@@ -9,5 +9,5 @@ public record Stuff(
 	public Stuff(String name) {
 		this(name, MessageFormat.format("Uma coisa “{0}”!!!", name));
 	}
-	
+
 }
