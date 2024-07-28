@@ -1,6 +1,9 @@
-package com.github.hugobor.gof_blabu;
+package com.github.hugobor.gof_blabu.singleton;
 
 import java.util.HashSet;
+
+import com.github.hugobor.gof_blabu.Person;
+import com.github.hugobor.gof_blabu.Stuff;
 
 public class PersonSingleton {
 

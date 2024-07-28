@@ -1,4 +1,4 @@
-package com.github.hugobor.gof_blabu;
+package com.github.hugobor.gof_blabu.singleton;
 
 public class SingletonLazyHolder {
 	

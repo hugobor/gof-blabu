@@ -16,7 +16,9 @@ public record Person(
 		return lower.substring(0, 1).toUpperCase().concat(lower.substring(1, lower.length()));
 	}
 	
+	public String cleanName() { return clean(name); }
+	
 	public String kiss(Person person) {
-		return MessageFormat.format("{0} deu um beijinho em {1}!!!", clean(name), clean(person.name())); 
+		return MessageFormat.format("{0} deu um beijinho em {1}!!!", this.cleanName(), person.cleanName()); 
 	}
 }
