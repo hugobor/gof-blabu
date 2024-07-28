@@ -2,15 +2,16 @@ package com.github.hugobor.gof_blabu;
 
 public class SingletonLazyHolder {
 	
-	private static SingletonLazyHolder uniqueInstance = null;
+	private static class InstanceHolder {
+		private static SingletonLazyHolder uniqueInstance = new SingletonLazyHolder();
+	}
 	
 	private SingletonLazyHolder() {
 		super();
 	}
 	
 	public static SingletonLazyHolder getUniqueInstance() {
-		if (uniqueInstance == null) uniqueInstance = new SingletonLazyHolder();
-		return uniqueInstance;
+		return InstanceHolder.uniqueInstance;
 	}
 
 }
